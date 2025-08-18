@@ -2,6 +2,7 @@
 import Container from "../components/shared/Container.astro";
 import Navitem from "../components/shared/Navitem.astro";
 import BtnLink from "../components/shared/BtnLink.astro";
+import Logo from "../../assets/images/nexus.png";
 
 const navItems = [
   {
@@ -34,7 +35,15 @@ const navItems = [
       <div class="min-w-max inline-flex relative">
         <a href="/" class="relative flex items-center gap-3">
           <div class="relative w-7 h-7 overflow-hidden flex rounded-xl">
-            <svg
+            <img 
+            src={Logo}
+            alt="Nexus Stores"
+            class="my-class"
+            width="300"
+            height="300"
+            class="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96"
+            />
+           <!-- <svg
               id="logo-15"
               width="100%"
               height="100%"
@@ -58,10 +67,10 @@ const navItems = [
                 d="M47 12.75C47 6.53679 41.9632 1.5 35.75 1.5H24.5V12.75C24.5 18.9632 29.5368 24 35.75 24C41.9632 24 47 18.9632 47 12.75Z"
                 class="ccustom"
                 fill="#17CF97"></path>
-            </svg>
+            </svg>  -->
           </div>
           <div class="inline-flex text-lg font-semibold text-heading-1">
-            SocialMediaAgency
+            Nexus Stores
           </div>
         </a>
       </div>
